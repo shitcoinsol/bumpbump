@@ -1,7 +1,7 @@
 // BUMP — minimal JS for copy + document ledger rendering
 (function(){
   const CONFIG = {
-    CA: "0x0000000000000000000000000000000000000000", // <- replace with your real contract address
+    CA: "SOON", // <- replace with your real contract address
     TWITTER_URL: "https://x.com/bumpbump",
     TOTAL_SUPPLY: 1000000000, // <- replace with your actual total supply (number)
     TIMEZONE: "Asia/Seoul"
