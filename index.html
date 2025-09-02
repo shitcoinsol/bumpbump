@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BUMP — Buyback & Burn</title>
+  <meta name="description" content="BUMP: Creator-fee buyback & burn token. Minimal landing + document-style burn ledger." />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="hero">
+      <img class="logo" src="assets/favicon.png" alt="BUMP logo placeholder" />
+      <h1 class="tagline">BUMP</h1>
+<br> Automatically Creator-fee buyback & burn token
+      <div class="ca-row">
+        <span class="ca-label">CA</span>
+        <code id="ca" class="ca">0x0000000000000000000000000000000000000000</code>
+        <button id="copyCA" class="btn btn-outline" aria-label="Copy Contract Address">Copy</button>
+      </div>
+      <div class="actions">
+        <a class="btn btn-outline" id="twitterBtn" href="https://x.com/bumpbump" target="_blank" rel="noopener">X</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="bbb" class="document">
+    <div class="paper" role="article" aria-labelledby="docTitle">
+      <header class="doc-header">
+        <h2 id="docTitle">Buyback &amp; Burn Ledger</h2>
+        <p class="doc-sub"></p>
+      </header>
+
+      <section class="summary" aria-label="Summary">
+        <div class="summary-item">
+          <div class="label">Total Burned</div>
+          <div class="value"><span id="totalBurned">–</span> <span class="unit">BUMP</span></div>
+        </div>
+        <div class="summary-item">
+          <div class="label">Remaining Supply</div>
+          <div class="value"><span id="remaining">–</span></div>
+        </div>
+        <div class="summary-item">
+          <div class="label">Last Burn (UST)</div>
+          <div class="value"><span id="lastBurn">–</span></div>
+        </div>
+      </section>
+
+      <section class="table-section" aria-label="Burn history">
+        <div class="table-title">Burn History</div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Time (UST)</th>
+                <th scope="col">Burned (BUMP)</th>
+                <th scope="col">Remaining</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+          </table>
+        </div>
+        <div class="empty" id="emptyState" hidden>No burns yet.</div>
+      </section>
+    </div>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite" class="toast" hidden>Copied</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
